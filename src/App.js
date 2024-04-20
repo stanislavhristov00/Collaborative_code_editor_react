@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   const [theme, setTheme] = useState("default");
-  const [language, setLanguage] = useState("javascript");
+  const [language, setLanguage] = useState("Javascript");
 
   const handleThemeChange = (event) => {
     console.log("we in")
@@ -26,8 +26,10 @@ function App() {
       </select>
       <label htmlFor="languageSelect">Language: </label>
       <select id="languageSelect" value={language} onChange={handleLanguageChange}>
-        <option value="javascript">Javascript</option>
+        <option value="Javascript">Javascript</option>
         <option value="C++">C++</option>
+        <option value="C">C</option>
+        <option value="Java">Java</option>
         <option value="Python">Python</option>
       </select>
     </div>
